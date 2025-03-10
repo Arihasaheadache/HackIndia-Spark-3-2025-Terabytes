@@ -1,4 +1,4 @@
-# 🧠 MINDLANCER: Connecting Freelancers to Businesses  
+# MINDLANCER: Connecting Freelancers to Businesses  
 
 MindLancer is a platform that connects skilled freelancers with businesses looking for top talent. Whether you're a freelancer seeking opportunities or a business in need of expertise, MindLancer makes collaboration simple and efficient.  
 
@@ -14,12 +14,12 @@ MindLancer is a platform that connects skilled freelancers with businesses looki
 
 ## 🎯 How It Works  
 
-### **1️⃣ Register an Account**  
+### **1. Register an Account**  
 Sign up as a **Freelancer** or a **Business** to start using MindLancer.  
 
 ![](https://github.com/Arihasaheadache/mindlancer/blob/main/img/regester.png)  
 
-### **2️⃣ Sign In**  
+### **2. Sign In**  
 Log in to access your dashboard and start exploring opportunities.  
 
 ![](https://github.com/Arihasaheadache/mindlancer/blob/main/img/loginpage.png)  
