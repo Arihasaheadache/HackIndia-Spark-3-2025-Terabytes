@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <title>Mindlancer</title>
+  </head>
+  <body>
+    <div class="header">
+      <span onclick="window.location.href='https://github.com/Arihasaheadache';">MINDLANCER</span>
+      <div class = "nav">
+        <a href="login.html">Log In</a>
+        <a href="register.html">Register</a>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=kjLml_QYRmv5Bfcv">Explore</a>
+      </div>
+    </div>
+ 
+    <div class="headline">
+      <h1>LET'S MAKE THE NEXT<br><span></span></h1>
+    </div>
+    
+    <div class="decon">
+      <div class="text">
+        <h1>
+          CONNECTING IDEAS...
+        </h1>
+        <p>
+          Mindlancer finds the right people for your ideas. 
+          Whether you’re a large company or a budding startup, our search algorithms finds people that fit your needs. 
+        </p>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/undraw_got-an-idea_1z3i.png?v=1741528672617"/>
+    </div>
+    
+    <div class="decon rev">
+      <div class="text">
+        <h1>
+          ... AND PEOPLE
+        </h1>
+        <p>
+          Mindlancer pushes your profile to companies looking for your exact skill set.
+          We handle connections, communications and payments; allowing you to focus on the project at hand.
+        </p>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/undraw_coding_joxb.png?v=1741529153391"/>
+    </div>
+    
+    <div class="decon fade-in-up">
+      <div class="text">
+        <h1>
+          YOUR DASHBOARD, YOUR RULES!
+        </h1>
+        <p>
+          Instantly set up a personalized dashboard, tweak it to match your style, and ensure the most important information always stay front and center.
+          No clutter, no distractions—just a seamless way to show what matters!
+        </p>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/user_ui.png?v=1741518475386"/>
+    </div>
+    
+    <div class="decon rev fade-in-up">
+      <div class="text">
+        <h1>
+          CHOOSE THE COMPANY FOR YOU!
+        </h1>
+        <p>
+          Find companies that match your workflow, with at a glance overview of the company information.
+          Easily compare companies with concise profiles highlighting their industry, team size, and core technologies.
+        </p>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/dev_ui.png?v=1741518480187"/>
+    </div>
+    
+    <div class="break fade-in-up">
+      <div class ="text">
+    <h1>
+      CONNECT THE WAY YOU WANT TO!
+      </h1>
+      <p>
+        Mindlancer allows you to communicate at an instant, in the medium you prefer.
+      </p>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/undraw_contact-us_kcoa.png?v=1741528512884"/>
+    </div>
+    
+        <div class="decon fade-in-up">
+      <div class="text">
+        <h1>
+          TEXT OR...
+        </h1>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/chat.png?v=1741529936180"/>
+    </div>
+    
+    <div class="decon rev fade-in-up">
+      <div class="text">
+        <h1>
+          ... CALL, ITS ON YOU
+        </h1>
+      </div>
+      <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/call.png?v=1741529940332"/>
+    </div>
+    
+      <div class="break fade-in-up">
+      <div class ="text">
+    <h1>
+      LET'S GET YOU GOING!
+      </h1>
+      <p>
+        JOIN OUR PLATFORM TO FIND THE PEOPLE YOU NEED
+      </p>
+      </div>
+    </div>  
+    <div class="headline fade-in-up">
+      <a href="register.html">
+          <button>
+        Join Us!
+      </button>
+      </a>
+      </div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            } else {
+                entry.target.classList.remove("visible");
+            }
+        });
+    }, { threshold: 0.2 }); // Trigger when 20% of the element is visible
+
+    // Select all elements with the class 'fade-in-up'
+    document.querySelectorAll(".fade-in-up").forEach(element => {
+        observer.observe(element);
+    });
+});
+    
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+    </script>
+  </body>
+</html>

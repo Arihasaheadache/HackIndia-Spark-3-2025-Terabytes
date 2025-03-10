@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  user-select: none;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Makes the text color the same as surrounding text */
+    cursor: pointer; /* Keeps it clickable */
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    padding-top: 3em;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Edge, Safari */
+}
+
+
+.header {
+  position: fixed;
+  height: 3em;
+  font-family: "DM Serif Text", serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5%;
+  z-index: 1000;
+}
+
+.header span {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 2em;
+}
+
+.nav a {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.nav a:hover {
+  color: purple;
+}
+
+.headline {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headline h1{
+  font-size: 4em;
+}
+
+.headline span {
+  color: purple;
+}
+
+.headline span::after {
+    content: "AI MODEL"; 
+    animation: changeText 4s infinite;
+}
+
+@keyframes changeText {
+    0%, 33%   { content: "AI MODEL"; }
+    34%, 66%  { content: "WEB SERVICE"; }
+    67%, 100% { content: "CRYPTO APP"; }
+}
+
+.text {
+    width: 50%;
+}
+
+.text h1 {
+    font-family: "DM Serif Text", serif;
+    font-size: 2em; 
+    margin-bottom: 0.5em;
+}
+
+.text p {
+    font-size: 1.2em;
+    opacity: 0.5;
+}
+
+
+.decon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em; 
+    padding: 2em;
+  padding-bottom: 10%;
+}
+.decon img {
+    width: 60%; 
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.rev {
+    flex-direction: row-reverse;
+}
+
+.break {
+    display: flex;
+    flex-direction: column; /* Text above, image below */
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+.break img {
+    width: 100%; /* Makes image responsive */
+    max-width: 700px; /* Prevents it from getting too big */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.break h1 {
+      font-family: "DM Serif Text", serif;
+    font-size: 4em; 
+    margin-bottom: 0.5em;
+}
+
+button {
+  padding-top: 4em;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: purple;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+/* Initial hidden state */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When the element is visible */
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* MEDIA */
+
+    @media (max-width: 768px) {
+      .nav {
+        gap: 1em;
+      }
+      
+      .header span {
+        font-size: 1em;
+      }
+      .headline {
+        padding-top: 40%;
+        padding-bottom: 80%;
+      }
+      
+      .headline h1{
+        font-size: 2em;
+        gap:0.1em;
+      }
+
+      
+    .text {
+        width: 100%;
+    }
+
+    .decon, .rev {
+        flex-direction: column;
+        text-align: center;
+    }
+    .decon img, .rev img {
+        width: 100%; 
+        max-width: 100%; 
+    }
+      
+      .break h1 {
+        font-size: 2em;
+      }
+      
+}

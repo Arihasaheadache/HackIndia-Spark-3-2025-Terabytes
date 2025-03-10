@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-screen height */
+    background-color: #121212; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Edge, Safari */
+}
+
+.home-button {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 0.5em 1em;
+    background-color: #5D0096; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline */
+    transition: background 0.3s;
+}
+
+.home-button:hover {
+    background-color: #7a1bc1; /* Lighter purple */
+}
+
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px; /* Limits size */
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 1em;
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.8em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    width: 100%;
+    padding: 0.8em;
+    background-color: #5D0096; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #7a1bc1; /* Lighter purple */
+}
