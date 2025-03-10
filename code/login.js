@@ -43,7 +43,7 @@ async function login() {
             alert("Invalid credentials. Please try again.");
         } else {
             alert("Login successful!");
-            window.location.href = "dashboard.html"; // Redirect after login
+            window.location.href = "https://ari1330test.glitch.me"; // Redirect after login
         }
     } catch (err) {
         console.error("Error logging in:", err);
