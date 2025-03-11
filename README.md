@@ -22,14 +22,32 @@ Sign up as a **Freelancer** or a **Business** to start using MindLancer.
 ### **2. Sign In**  
 Log in to access your dashboard and start exploring opportunities.  
 
-![](https://github.com/Arihasaheadache/mindlancer/blob/main/img/loginpage.png)  
+![](https://github.com/Arihasaheadache/mindlancer/blob/main/img/loginpage.png) 
+
+### **3. Customize**  
+Customize your dashboard with numerous options.  
+
+![](https://github.com/Arihasaheadache/HackIndia-Spark-3-2025-Terabytes/blob/main/img/option.png) 
+
+### **4. Dashboard!**  
+Check out your dashboard decked with all your information, all in one place.
+![](https://github.com/Arihasaheadache/HackIndia-Spark-3-2025-Terabytes/blob/main/img/dash.png)
+
+### **5. Chat and Video Call**  
+We allow you to use our in built chat or our in-house Agora video and voice call service to keep communication seamless.
+![Chat with People](https://github.com/Arihasaheadache/HackIndia-Spark-3-2025-Terabytes/blob/main/img/chat.png)
+
+
+
+![Or call them up](https://github.com/Arihasaheadache/HackIndia-Spark-3-2025-Terabytes/blob/main/img/Screenshot%20from%202025-03-11%2006-52-47.png)
 
 ## 🛠 Tech Stack  
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: Supabase (PostgreSQL + Authentication)  
 - **Authentication**: Supabase Auth  
-- **Database**: Supabase (PostgreSQL)  
+- **Database**: Supabase (PostgreSQL)
+- **Video/Voice**: Replit (Agora API) 
 
 ## 📦 Installation & Setup  
 
@@ -38,7 +56,8 @@ To run the project locally, follow these steps:
 ### Prerequisites  
 - A web browser  
 - Live Server (for local development)  
-- Supabase account & API keys  
+- Supabase account & API keys
+- Replit account
 
 ### Setup  
 
@@ -51,6 +70,3 @@ cd mindlancer
 
 # Open the project in a live server or use VS Code's Live Server extension
 ```
-
-WORK IN PROGRESS :)
-
