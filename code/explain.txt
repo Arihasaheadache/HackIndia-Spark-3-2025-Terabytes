@@ -1,3 +1,5 @@
 Please note, the code will not run until you make a config.js file in the same directory as the rest of the code and add:
 
 window.SUPABASE_ANON_KEY="your_api_key";
+
+We are also using a custom Replit server to host our video calls, if you're planning to use it for your own projects, know that it will be turned off after this hackathon :P
