@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #1e1e1e; /* Changed to grayish-black */
+  color: white;
+  justify-content: center;
+  padding-top: 3em;
+  font-family: "DM Serif Text", serif;
+  align-items: center;
+  gap: 1.5em;
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  height: 3em;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5%;
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 1.5em;
+}
+
+.nav {
+  display: flex;
+  gap: 2em;
+}
+
+.nav a {
+  font-size: 1em;
+}
+
+.nav a:hover {
+  color: purple;
+}
+
+/* ✅ Ensuring equal size for both boxes */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+  width: 100%;
+}
+
+/* ✅ Equal width and height for login boxes */
+.login-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjusted for a grayish-transparent look */
+  padding: 1.5em 2em;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-out forwards;
+  width: 100%;
+  max-width: 80vw;
+  height:auto; /* ✅ Ensures equal height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ✅ Ensuring both boxes have the same height */
+.dashboard-container .login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Upper Box Layout */
+.upper-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.upper-box h2 {
+  font-size: 1.5em;
+  color: white;
+}
+
+.upper-box p {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.8); /* Slightly brighter for contrast */
+}
+
+.upper-box img {
+  max-width: 20%;
+  height:auto;
+}
+
+/* Numerical Data Layout */
+.stats {
+  display: flex;
+  flex-direction: row; /* Ensure row formation */
+  justify-content: space-around; /* Space them evenly */
+  gap: 1.5em; /* Add spacing between them */
+  width: 100%;
+  margin-top: 1em;
+}
+
+.stat-item {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Lower Box Layout */
+.lower-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.lower-box span {
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.7); /* Softer contrast */
+}
+
+.data-item {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

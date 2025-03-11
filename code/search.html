@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Profiles</title>
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="search.css">
+    <script defer src="search.js"></script>
+</head>
+<body>
+    <div class="search-container">
+        <select id="position">
+            <option value="">Select Position</option>
+        </select>
+        <select id="languages" multiple>
+            <option value="">Select Languages</option>
+        </select>
+        <select id="frameworks" multiple>
+            <option value="">Select Frameworks</option>
+        </select>
+        <button onclick="searchProfiles()">Search</button>
+    </div>
+    
+    <div id="results" class="results-container"></div>
+    
+    
+</body>
+</html>

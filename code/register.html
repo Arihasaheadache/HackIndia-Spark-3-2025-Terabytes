@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="register.css"> <!-- External CSS -->
     <script src="config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-  <script src="register.js"></script>
+    <script src="register.js"></script>
 </head>
 <body onload="toggleFields()">
 
@@ -19,74 +19,24 @@
     <div class="register-box">
         <h2>Registration</h2>
 
-
-<!-- Toggle Switch for Freelancer/Business -->
-<div class="toggle-container">
-    <span id="toggle-label">Freelancer</span>
-    <label class="switch">
-        <input type="checkbox" id="roleToggle" onchange="toggleFields()">
-        <span class="slider round"></span>
-    </label>
-</div>
-
-<!-- Hidden input to store selected role -->
-<input type="hidden" id="role" name="role" value="freelancer">
-
+        <!-- Toggle Switch for Freelancer/Business -->
+        <div class="toggle-container">
+            <span id="toggle-label">Freelancer</span>
+            <label class="switch">
+                <input type="checkbox" id="roleToggle" onchange="toggleFields()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        
+        <!-- Hidden input to store selected role -->
+        <input type="hidden" id="role" name="role" value="freelancer">
 
         <form onsubmit="registerUser(event)">
-
             <!-- Basic Details -->
-            <input type="text" class="input-field" placeholder="Full Name / Business Name" required>
-            <input type="email" class="input-field" placeholder="Email Address" required>
-            <input type="password" class="input-field" placeholder="Password" required>
-            <input type="password" class="input-field" placeholder="Confirm Password" required>
-            <label class="file-upload-label">Upload Profile Picture / Logo:</label>
-            <input type="file" class="input-field" accept="image/*">
-
-            <!-- Freelancer-Specific Fields -->
-            <div id="freelancer-fields">
-                <select class="input-field" required>
-                    <option value="">Select Your Skills</option>
-                    <option>Web Development</option>
-                    <option>App Development</option>
-                    <option>AI/Machine Learning</option>
-                    <option>Cybersecurity</option>
-                    <option>Game Development</option>
-                </select>
-
-                <input type="number" class="input-field" placeholder="Years of Experience" min="0" required>
-                <input type="url" class="input-field" placeholder="Portfolio/Website Link">
-                <input type="number" class="input-field" placeholder="Expected Hourly Rate ($)" min="1" required>
-            </div>
-
-            <!-- Business-Specific Fields -->
-            <div id="business-fields" style="display: none;">
-                <input type="text" class="input-field" placeholder="Business Type">
-                <input type="text" class="input-field" placeholder="Company Registration Number">
-                <input type="text" class="input-field" placeholder="Company Address">
-                <input type="url" class="input-field" placeholder="Company Website">
-            </div>
-
-            <!-- Location & Availability -->
-            <input type="text" class="input-field" placeholder="Country/City" required>
-
-            <label class="radio-label">Available for Full-Time?</label>
-            <div class="radio-group">
-                <input type="radio" name="fulltime" value="yes" required> Yes
-                <input type="radio" name="fulltime" value="no" required> No
-            </div>
-
-            <input type="text" class="input-field" placeholder="Preferred Time Zone">
-
-            <!-- Additional Information -->
-            <textarea class="input-field" placeholder="Short Bio/About Me / Company Description" rows="3"></textarea>
-
-          <!-- Payment Method Button -->
-            <button type="button" class="submit-btn" id="stripeButton" onclick="setStripeAccount()">Set Stripe Account</button>
-
-<!-- Hidden input to store payment method -->
-            <input type="hidden" id="paymentMethod" name="paymentMethod" value="">
-
+            <input type="text" class="input-field" id="username" placeholder="Username" required>
+            <input type="email" class="input-field" id="email" placeholder="Email Address" required>
+            <input type="password" class="input-field" id="password" placeholder="Password" required>
+            
             <!-- Terms & Conditions -->
             <div class="checkbox-group">
                 <input type="checkbox" required> I agree to the Terms And Conditions
@@ -96,8 +46,5 @@
             <button type="submit" class="submit-btn">Register</button>
         </form>
     </div>
-
-
 </body>
 </html>
-

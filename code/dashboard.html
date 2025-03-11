@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="dashboard.js" defer></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Hey, <span id="user-name">Person</span></h1>
+        <div class="nav">
+          <a href="chat.html">Chats</a>
+          <a href="search.html">Search</a>
+          <a href="info.html">Settings</a>
+        </div>
+    </div>
+
+    <div class="login-box upper-box">
+      <div class="profile-section">
+        <img src="https://cdn.glitch.global/e7f95a93-3c85-4451-b225-710fadcc4654/user.png?v=1741623601032"/>
+        <h2 id="dashboard-username">Username</h2>
+        <h3 id="dashboard-position"><span id="user-position">Position</span></h3>
+      </div>
+  
+        <div class="stat-item">
+          <p id="prev-projects">0</p>
+          <h3>Projects</h3>
+        </div>
+        <div class="stat-item">
+          <p><span id="years-exp">0 </span> yrs</p>
+          <h3>Experience</h3>
+        </div>
+        <div class="stat-item">
+          <p id="prev-jobs">0</p>
+          <h3>Previous Jobs</h3>
+        </div>
+    </div>
+    
+    <div class="login-box lower-box">
+
+      <h3>Languages: <span id="languages" class="pepe">No languages? Maybe No Code is love ❤️</span></h3>
+      <h3>Frameworks: <span id="frameworks" class="pepe">Frameworks missing? HTML + CSS = Pro skills 💪</span></h3>
+      <h3>Bio: <span id="bio" class="pepe">Didn't add a bio, but I swear I'm not boring.</span></h3>
+      </div>
+  </body>
+</html>

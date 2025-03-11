@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Info</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="info.css">
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="info.js"></script>
+</head>
+<body>
+    <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+    
+    <div class="info-box">
+        <h2>Complete Your Profile</h2>
+        <p id="role-display">Loading...</p>
+        
+        <!-- Freelancer Fields -->
+        <div id="freelancer-fields" class="role-section">
+            <label><br>Connections:</label>
+            <div id="connections-list"></div>
+            <button onclick="addConnection()">Add Connection</button>
+            
+            <input type="number" id="projects" placeholder="Number of Projects" required>
+            <input type="number" id="experience" placeholder="Years of Experience" required>
+            <input type="number" id="previous-jobs" placeholder="Previous Jobs" required>
+            
+            <label>Programming Languages:</label>
+            <div id="languages-list"></div>
+            <button onclick="addLanguage()">Add Language</button>
+            
+            <label><br>Frameworks:</label>
+            <div id="frameworks-list"></div>
+            <button onclick="addFramework()">Add Framework</button>
+            
+            <label><br>Position:</label>
+            <select id="position">
+                <option value="">Select Position</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Full Stack Developer">Full Stack Developer</option>
+                <option value="Mobile Developer">Mobile Developer</option>
+                <option value="DevOps Engineer">DevOps Engineer</option>
+                <option value="Data Scientist">Data Scientist</option>
+            </select>
+            
+            <textarea id="bio" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        
+        <!-- Business Fields -->
+        <div id="business-fields" class="role-section">
+            <input type="text" id="industry" placeholder="Business Industry">
+            <input type="number" id="team-size" placeholder="Team Size">
+            <input type="number" id="years-business" placeholder="Years in Business">
+            <textarea id="mission" placeholder="Company Mission"></textarea>
+            <input type="text" id="company-website" placeholder="Company Website">
+            
+            <label>Preferred Freelancer Skills:</label>
+            <div id="skills-list"></div>
+            <button onclick="addSkill()">Add Skill</button>
+            
+            <textarea id="hiring-needs" placeholder="Describe your hiring needs..."></textarea>
+        </div>
+        
+        <button class="submit-btn" onclick="saveProfile()">Save</button>
+    </div>
+    
+    <script src="info.js"></script>
+</body>
+</html>
